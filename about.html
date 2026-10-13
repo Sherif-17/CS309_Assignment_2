@@ -12,19 +12,64 @@
 <body>
     <!-- Start navbar -->
     <nav class="navbar">
-        <div>
-            <img src="img/LEGO_logo.svg.webp" alt="LOGO" width="100" height="100">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/LEGO_logo.svg.webp" alt="LEGO Logo">
+            </a>
         </div>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <svg viewBox="0 0 24 24">
+                <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z" />
+            </svg>
+        </button>
+
+        <!-- Navigation Links -->
         <div class="links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="components.html">components</a>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search">
+        </div>
+
+        <!-- Right Utility Icons & Sign In -->
+        <div class="navbar-right">
+
+            <!-- Sign-in Icon -->
+            <a href="#" class="nav-action">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 10c-4.42 0-8 1.79-8 4v2h16v-2c0-2.21-3.58-4-8-4z" />
+                </svg>
+                <span>Sign Up</span>
+            </a>
+
+            <!-- Wishlist Heart Icon -->
+            <a href="#" class="nav-action">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+            </a>
+
+            <!-- Shopping Bag Icon -->
+            <a href="#" class="nav-action">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h6v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z" />
+                </svg>
+                <span>(0)</span>
+            </a>
 
         </div>
     </nav>
-    <!-- end navbar -->
-
+    <!-- End navbar -->
 
     <!-- start first section -->
     <section class="about-section-1">
@@ -84,6 +129,23 @@
         </table>
     </section>
     <!-- end second section -->
+
+    <!--start Modal Window-->
+    <input type="checkbox" id="modal-toggle" hidden>
+
+    <label for="modal-toggle" class="btn">
+        Learn More
+    </label>
+
+    <div class="modal">
+        <div class="modal-content">
+
+            <h2>Learn More</h2>
+            <p>Welcome to our LEGO website!</p>
+        </div>
+    </div>
+    <!--end Modal Window-->
+
 
 
 </body>
